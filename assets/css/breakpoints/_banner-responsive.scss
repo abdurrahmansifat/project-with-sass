@@ -1,0 +1,31 @@
+@import "media-queries";
+/*mobile screen banner */
+@include mobile {
+  .banner {
+    &__area {
+      padding: 50px 0px;
+    }
+    &__title {
+      font-size: 21px;
+      color: #fff;
+      letter-spacing: 0.5px;
+      word-spacing: 1px;
+    }
+    &__desc {
+      max-width: 68%;
+      padding-top: 25px;
+      padding-bottom: 40px;
+      word-spacing: 0.5px;
+    }
+    .btn {
+      padding: 8px 20px;
+      font-size: 16px;
+    }
+    .btn-full-right {
+      margin-right: 16px;
+    }
+    .btn.btn-outline {
+      padding: 6px 20px;
+    }
+  }
+}

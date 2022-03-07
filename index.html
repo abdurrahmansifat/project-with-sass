@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project With Sass</title>
+    <!--icon-->
+    <link rel="icon" href="assets/img/icon.png" type="image/jpg">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="assets/css/plugins/font-awesome/css/all.min.css">
+    <!--main css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--header area start-->
+    <header class="header">
+        <div class="main">
+            <div class="header__area fix">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo-link" ><img class="header__logo-img"
+                        alt="logo"  src="assets/img/sasslogo.png"></a>
+                </div>
+                <!--menu-->
+                <input type="checkbox" class="toggle_nav" id="toggle_nav">
+                <nav class="header__menu text-capitalize">
+                    <ul class="header__menu-box">
+                        <li class="header__menu-list"><a class="header__menu-link" href="index.html">Home</a></li>
+                        <li class="header__menu-list"><a class="header__menu-link" href="#about">About</a></li>
+                        <li class="header__menu-list"><a class="header__menu-link" href="#services">Sevices</a></li>
+                        <li class="header__menu-list"><a class="header__menu-link" href="#portfolio">Portfolio</a></li>
+                        <li class="header__menu-list"><a class="header__menu-link" href="#blog">Blog</a></li>
+                        <li class="header__menu-list"><a class="header__menu-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <label for="toggle_nav" class="toggle_nav_label"><span></span></label>
+            </div>
+        </div>
+    </header>
+    <!--header area end-->
+    <!--banner area start-->
+    <section class="banner">
+
+        <div class="banner__area fix pt-100 pb-100 bg" style="background-image: url(assets/img/banner.jpg);">
+            <div class="banner__content text-center fix">
+                <h1 class="text-uppercase banner__title">Welcome to our World!</h1>
+                <p class="banner__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                    necessitatibus quod voluptatum voluptates harum ducimus, nulla provident dolor fugit natus!</p>
+                <a href="#" class="btn btn-full btn-full-right" >Contact Us</a>
+                <a href="#" class="btn btn-outline" >Our Portfolio</a>
+            </div>
+        </div>
+
+    </section>
+    <!--banner area end-->
+    <!--about area start-->
+    <section class="about" id="about">
+        <div class="main">
+            <div class="about__area pt-80 pb-80 fix">
+                <div class="about__content title-area text-center">
+                    <h1 class="text-capitalize about__title title-area__title">About Us</h1>
+                    <p class="about__desc title-area__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam ex dolorem, neque soluta alias saepe cumque neque soluta alias.</p>
+                </div>
+                <div class="about__details text-center">
+                    <!--single about start-->
+                    <div class="about__single">
+                        <h2 class="about__single-title">Our Mission</h2>
+                        <p class="about__single-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Incidunt, molestias esse sequi accusantium perferendis ea!</p>
+                        <a href="#" class="about__btn btn btn-outline" >Read More</a>
+                    </div>
+                    <!--single about end-->
+                    <!--single about start-->
+                    <div class="about__single">
+                        <h2 class="about__single-title">Our Vission</h2>
+                        <p class="about__single-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Incidunt, molestias esse sequi accusantium perferendis ea!</p>
+                        <a href="#" class="about__btn btn btn-outline" >Read More</a>
+                    </div>
+                    <!--single about end-->
+                    <!--single about start-->
+                    <div class="about__single">
+                        <h2 class="about__single-title">Our History</h2>
+                        <p class="about__single-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Incidunt, molestias esse sequi accusantium perferendis ea!</p>
+                        <a href="#" class="about__btn btn btn-outline" >Read More</a>
+                    </div>
+                    <!--single about end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about area end-->
+    <!--services area start-->
+    <section class="services" id="services">
+        <div class="main">
+            <div class="services__area pt-80 pb-80 fix">
+                <div class="title-area text-center">
+                    <h1 class="text-capitalize title-area__title ">Our Services</h1>
+                    <p class="title-area__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex
+                        dolorem, neque soluta alias saepe cumque neque soluta alias.</p>
+                </div>
+                <div class="services__details text-center">
+                    <!--single service start-->
+                    <div class="services__single">
+                        <i class="fa-solid fa-anchor services__single-i"></i>
+                        <h3 class="services__single-title">Graphics Design</h3>
+                        <p class="services__single-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Maiores quia et eum magnam quasi reprehenderit velit minus voluptas a voluptatibus!</p>
+                    </div>
+                    <!--single service end-->
+                    <!--single service start-->
+                    <div class="services__single">
+                        <i class="fa-brands fa-affiliatetheme services__single-i"></i>
+                        <h3 class="services__single-title">Web Design</h3>
+                        <p class="services__single-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Maiores quia et eum magnam quasi reprehenderit velit minus voluptas a voluptatibus!</p>
+                    </div>
+                    <!--single service end-->
+                    <!--single service start-->
+                    <div class="services__single">
+                        <i class="fa-brands fa-angular services__single-i"></i>
+                        <h3 class="services__single-title">Web Development</h3>
+                        <p class="services__single-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Maiores quia et eum magnam quasi reprehenderit velit minus voluptas a voluptatibus!</p>
+                    </div>
+                    <!--single service end-->
+                    <!--single service start-->
+                    <div class="services__single">
+                        <i class="fa-brands fa-android services__single-i"></i>
+                        <h3 class="services__single-title">App Development</h3>
+                        <p class="services__single-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Maiores quia et eum magnam quasi reprehenderit velit minus voluptas a voluptatibus!</p>
+                    </div>
+                    <!--single service end-->
+                    <!--single service start-->
+                    <div class="services__single">
+                        <i class="fa-brands fa-accusoft services__single-i"></i>
+                        <h3 class="services__single-title">Digital Marketing</h3>
+                        <p class="services__single-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Maiores quia et eum magnam quasi reprehenderit velit minus voluptas a voluptatibus!</p>
+                    </div>
+                    <!--single service end-->
+                    <!--single service start-->
+                    <div class="services__single">
+                        <i class="fa-regular fa-address-book services__single-i"></i>
+                        <h3 class="services__single-title">24/7 Service</h3>
+                        <p class="services__single-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Maiores quia et eum magnam quasi reprehenderit velit minus voluptas a voluptatibus!</p>
+                    </div>
+                    <!--single service end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--services area end-->
+    <!--portfolio area start-->
+    <section class="portfolio pt-80 pb-80 fix " id="portfolio">
+        <div class="main">
+            <div class="portfolio__area ">
+                <div class="title-area text-center">
+                    <h1 class="text-capitalize title-area__title">Latest Portfolio</h1>
+                    <p class="title-area__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex
+                        dolorem, neque soluta alias saepe cumque neque soluta alias.</p>
+                </div>
+            </div>
+            <div class="portfolio__details">
+                <!--single portfolio start-->
+                <div class="portfolio__single" style="background-image: url(assets/img/portfolio1.jpg);">
+                    <h2 class="portfolio__single-title">Project Name</h2>
+                </div>
+                <!--single portfolio end-->
+                <!--single portfolio start-->
+                <div class="portfolio__single" style="background-image: url(assets/img/portfolio2.jpg);">
+                    <h2 class="portfolio__single-title">Project Name</h2>
+                </div>
+                <!--single portfolio end-->
+                <!--single portfolio start-->
+                <div class="portfolio__single" style="background-image: url(assets/img/portfolio3.jpg);">
+                    <h2 class="portfolio__single-title">Project Name</h2>
+                </div>
+                <!--single portfolio end-->
+                <!--single portfolio start-->
+                <div class="portfolio__single" style="background-image: url(assets/img/portfolio4.jpg);">
+                    <h2 class="portfolio__single-title">Project Name</h2>
+                </div>
+                <!--single portfolio end-->
+                <!--single portfolio start-->
+                <div class="portfolio__single" style="background-image: url(assets/img/portfolio5.jpg);">
+                    <h2 class="portfolio__single-title">Project Name</h2>
+                </div>
+                <!--single portfolio end-->
+                <!--single portfolio start-->
+                <div class="portfolio__single" style="background-image: url(assets/img/portfolio6.jpg);">
+                    <h2 class="portfolio__single-title">Project Name</h2>
+                </div>
+                <!--single portfolio end-->
+            </div>
+        </div>
+    </section>
+    <!--portfolio area end-->
+    <!--cta area start-->
+    <section class="cta pt-70 pb-70 fix bg" style="background-image: url(assets/img/banner.jpg);">
+        <div class="cta__content text-center ">
+            <h1 class="text-uppercase cta__title">WE ARE CREATIVE</h1>
+            <p class="cta__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero modi
+                expedita, pariatur architecto fugiat inventore deleniti commodi. Quibusdam laborum aperiam, aliquam
+                suscipit nihil pariatur labore minus possimus unde enim.</p>
+            <a href="#" class="btn btn-full btn-full-right" >Let's Go</a>
+        </div>
+    </section>
+    <!--cta area end-->
+    <!--blog area start-->
+    <section class="blog" id="blog">
+        <div class="main">
+            <div class="blog__area pt-80 pb-80 fix">
+                <div class="title-area text-center">
+                    <h1 class="text-capitalize title-area__title">Exclusive Blogs</h1>
+                    <p class="title-area__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex
+                        dolorem, neque soluta alias saepe cumque neque soluta alias.</p>
+                </div>
+                <div class="blog__details">
+                    <!--single blog start-->
+                    <div class="blog__single">
+                        <img class="blog__single-img" src="assets/img/blog1.jpg" alt="blog image one">
+                        <div class="blog__content">
+                            <h3 class="blog__single-title text-capitalize">Blog Title</h3>
+                            <p class="blog__single-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Deserunt ut, sint at dolorum aliquid perspiciatis culpa aperiam animi explicabo. Eos.
+                            </p>
+                            <a href="#" class="btn btn-full btn-full-right" >Read More</a>
+                        </div>
+                    </div>
+                    <!--single blog end-->
+                    <!--single blog start-->
+                    <div class="blog__single">
+                        <img src="assets/img/blog2.jpg" class="blog__single-img" alt="blog image two">
+                        <div class="blog__content">
+                            <h3 class="blog__single-title text-capitalize">Blog Title</h3>
+                            <p class="blog__single-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Deserunt ut, sint at dolorum aliquid perspiciatis culpa aperiam animi explicabo. Eos.
+                            </p>
+                            <a href="#" class="btn btn-full btn-full-right" >Read More</a>
+                        </div>
+                    </div>
+                    <!--single blog end-->
+                    <!--single blog start-->
+                    <div class="blog__single">
+                        <img src="assets/img/blog3.jpg" alt="blog image three" class="blog__single-img" >
+                        <div class="blog__content">
+                            <h3 class="text-capitalize blog__single-title">Blog Title</h3>
+                            <p class="blog__single-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Deserunt ut, sint at dolorum aliquid perspiciatis culpa aperiam animi explicabo. Eos.
+                            </p>
+                            <a href="#" class="btn btn-full btn-full-right" >Read More</a>
+                        </div>
+                    </div>
+                    <!--single blog end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--blog area end-->
+    <!--contact area start-->
+    <section class="contact" id="contact">
+        <div class="main">
+            <div class="contact__area pt-80 pb-80 fix">
+                <div class="title-area text-center">
+                    <h1 class="text-capitalize title-area__title">Contact Us</h1>
+                    <p class="title-area__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex
+                        dolorem, neque soluta alias saepe cumque neque soluta alias.</p>
+                </div>
+                <div class="contact__info">
+                    <!--single icon start-->
+                    <div class="contact__single-icon">
+                        <i class="fa-solid fa-location-dot contact__single-icon-i"></i>
+                        <h3 class="contact__single-icon-title">Address</h3>
+                        <p class="contact__single-icon-desc">new y**rk, u**a</p>
+                    </div>
+                    <!--single icon end-->
+                    <!--single icon start-->
+                    <div class="contact__single-icon">
+                        <i class="fa-solid fa-envelope contact__single-icon-i"></i>
+                        <h3 class="contact__single-icon-title">EMAIL</h3>
+                        <p class="contact__single-icon-desc">info@e**ample.com</p>
+                    </div>
+                    <!--single icon end-->
+                    <!--single icon start-->
+                    <div class="contact__single-icon">
+                        <i class="fas fa-phone contact__single-icon-i"></i>
+                        <h3 class="contact__single-icon-title">PHONE</h3>
+                        <p class="contact__single-icon-desc">+880 123 *** 7890</p>
+                    </div>
+                    <!--single icon end-->
+                </div>
+                <div class="contact__form">
+                    <div class="contact__input">
+                        <input type="text" class="contact__input-input" placeholder="Name">
+                        <input type="email" class="contact__input-input" placeholder="Email">
+                        <input type="text" class="contact__input-input" placeholder="Number">
+                        <textarea placeholder="message" class="contact__input-textarea" rows="10" cols="20"></textarea>
+                        <input type="submit" class="contact__input-submit" val="Submit">
+                    </div>
+                    <div class="contact__map">
+                        <iframe class="contact__map-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14612.945826219677!2d90.40214619999999!3d23.703248600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1644693820618!5m2!1sen!2sbd"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact area end-->
+    <!--footer area start-->
+    <footer class="footer text-center fix">
+
+        <p class="footer__desc"> &copy; 2022 All Rights Reserved. </p>
+
+        <div class="footer__scroll-top">
+            <button class="footer__button" onclick="scrollToTop()" id="scrollToTopBtn"><i
+                    class="fa-solid fa-arrow-turn-up"></i></button>
+        </div>
+
+    </footer>
+    <!--footer area end-->
+    <!--js code-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+
+    <script>
+        var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        var rootElement = document.rootElement;
+        function scrollToTop() {
+            $(window).scrollTop(0);
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+
+        }
+        scrollToTopBtn.addEventListener('click', scrollToTop())
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+/* responsive css */
+@import "media-queries";
+/*laptop screen header */
+@include laptop {
+  .header {
+    .main {
+      width: 960px;
+    }
+    &__logo-img {
+      width: 160px;
+    }
+    &__menu {
+      width: 770px;
+    }
+    &__menu-box {
+      margin: 8px auto;
+    }
+  }
+}
+/*tablet screen header */
+@include tablet {
+  .header {
+    padding: 9px;
+    .main {
+      width: 750px;
+    }
+    &__logo-img {
+      width: 155px;
+      margin-right: 20px;
+    }
+    &__menu {
+      width: 575px;
+    }
+    &__menu-box {
+      margin: 7px auto;
+    }
+  }
+}
+
+/*mobile screen header */
+@include mobile {
+  .header {
+    padding: 12px;
+    .main {
+      width: 310px;
+    }
+    &__logo-img {
+      width: 140px;
+      margin-right: 20px;
+    }
+
+    .toggle_nav {
+      display: none;
+    }
+    .toggle_nav:checked ~ nav {
+      display: block;
+    }
+    &__menu {
+      width: 100%;
+      text-align: left;
+      display: none;
+      float: left;
+    }
+    &__menu-box {
+      margin: 25px 0px 0px 0px;
+    }
+    &__menu-list {
+      padding-bottom: 16px;
+      display: block;
+      &:last-child {
+        padding-bottom: 0px;
+      }
+    }
+    &__menu-link {
+      font-size: 16px;
+    }
+    .toggle_nav_label {
+      position: absolute;
+      top: 28px;
+      right: 0;
+      margin-right: 35px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .toggle_nav_label span,
+    .toggle_nav_label span::after,
+    .toggle_nav_label span::before {
+      position: relative;
+      width: 30px;
+      height: 3px;
+      background: $black;
+      display: block;
+      border-radius: 2px;
+    }
+    .toggle_nav_label span::after,
+    .toggle_nav_label span::before {
+      position: absolute;
+      content: "";
+    }
+    .toggle_nav_label span::before {
+      bottom: 7px;
+    }
+    .toggle_nav_label span::after {
+      top: 7px;
+    }
+  }
+}

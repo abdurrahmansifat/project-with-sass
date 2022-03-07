@@ -1,0 +1,43 @@
+/*about css */
+.about {
+  &__area {
+  }
+  &__content {
+  }
+  &__title {
+  }
+  &__desc {
+  }
+  &__details {
+  }
+  &__single {
+    width: 385px;
+    margin: 0 auto;
+    float: left;
+    border: 1px solid $border_gray;
+    padding: 35px 20px;
+    margin-right: 22px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__single-title {
+    text-transform: capitalize;
+    font-size: 30px;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    color: $black;
+    font-weight: 500;
+  }
+  &__single-desc {
+    color: $black;
+    padding: 20px 0px 35px 0px;
+  }
+  &__btn {
+    color: $black;
+    &:hover {
+      color: $primary_color;
+      border: 2px solid $black;
+    }
+  }
+}

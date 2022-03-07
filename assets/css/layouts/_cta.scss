@@ -1,0 +1,21 @@
+/*cta css*/
+.cta {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  &__content {
+  }
+  &__title {
+    color: $white;
+    font-size: 45px;
+    word-spacing: 1px;
+    font-weight: 700;
+  }
+  &__desc {
+    color: $white;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 25px 0px 40px 0px;
+    word-spacing: 0.5px;
+  }
+}

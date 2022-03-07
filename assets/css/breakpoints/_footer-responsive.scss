@@ -1,0 +1,16 @@
+@import "media-queries";
+/*mobile screen footer */
+@include mobile {
+  .footer {
+    &__desc {
+      font-size: 16px;
+    }
+    &__button {
+      font-size: 16px;
+      top: 17px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

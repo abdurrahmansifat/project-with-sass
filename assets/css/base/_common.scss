@@ -1,0 +1,144 @@
+@import "color";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.fix::after,
+.fix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  transition: 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+/*background css*/
+.bg {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+    z-index: -1;
+  }
+}
+/*title area*/
+.title-area {
+  padding-bottom: 50px;
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    word-spacing: 2px;
+    position: relative;
+    color: $black;
+    padding-bottom: 35px;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $primary_color;
+      width: 70px;
+      height: 2px;
+      left: 50%;
+      top: 42px;
+      transform: translateX(-50%);
+    }
+  }
+  &__desc {
+    color: $black;
+    width: 38%;
+    margin: 0 auto;
+    word-spacing: 2px;
+  }
+}
+
+/*button css*/
+.btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  color: $white;
+  border-radius: 3px;
+  transition: 0.3s ease;
+  display: inline-block;
+  &.btn-full {
+    background-color: $primary_color;
+    &:hover {
+      background-color: $black;
+    }
+  }
+  &.btn-outline {
+    padding: 8px 30px;
+    border: 2px solid $primary_color;
+    &:hover {
+      border: 2px solid $black;
+      color: $primary_color;
+    }
+  }
+}
+.btn-full-right {
+  margin-right: 25px;
+}
+/*html*/
+html {
+  scroll-behavior: smooth;
+}
+/*checkbox nav menu */
+.toggle_nav {
+  display: none;
+}
+
+/* common margin and padding */
+
+@for $i from 1 through 10 {
+  .mt-#{$i * 10} {
+    margin-top: $i * 10px;
+  }
+  .mb-#{$i * 10} {
+    margin-bottom: $i * 10px;
+  }
+  .pt-#{$i * 10} {
+    padding-top: $i * 10px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: $i * 10px;
+  }
+}
+
+$list: left, center, right, justify;
+
+@each $i in $list {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
+
+$list_two: uppercase, lowercase, capitalize;
+@each $i in $list_two {
+  .text-#{$i} {
+    text-transform: $i;
+  }
+}

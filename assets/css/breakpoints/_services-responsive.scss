@@ -1,0 +1,78 @@
+@import "media-queries";
+/*laptop screen services */
+@include laptop {
+  .services {
+    .main {
+      width: 960px;
+    }
+    &__single {
+      width: 303px;
+    }
+  }
+}
+
+/*tablet screen services */
+@include tablet {
+  .services {
+    .main {
+      width: 750px;
+    }
+    &__single {
+      width: 233px;
+    }
+    &__single-title {
+      font-size: 20px;
+    }
+  }
+}
+
+/*mobile screen services */
+@include mobile {
+  .services {
+    .main {
+      width: 310px;
+    }
+    &__area {
+      padding: 40px 0px;
+    }
+    .title-area {
+      padding-bottom: 30px;
+      &__title {
+        font-size: 30px;
+        word-spacing: 1px;
+        padding-bottom: 30px;
+      }
+      &__desc {
+        color: #333;
+        width: 99%;
+        word-spacing: 0.5px;
+      }
+      &__title::before {
+        top: 40px;
+      }
+    }
+    &__single {
+      width: 100%;
+      padding: 25px 20px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      &:nth-child(4) {
+        margin-bottom: 20px;
+      }
+      &:nth-child(5) {
+        margin-bottom: 20px;
+      }
+    }
+    .services__single-i {
+      font-size: 19px;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+    }
+    .services__single-title {
+      font-size: 20px;
+      word-spacing: 0.5px;
+      padding: 15px 0px 18px 0px;
+    }
+  }
+}

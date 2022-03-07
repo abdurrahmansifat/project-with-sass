@@ -1,0 +1,36 @@
+/*footer*/
+.footer {
+  background-color: $black;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  &__desc {
+    color: $white;
+    font-size: 18px;
+    word-spacing: 0.5px;
+    display: inline-block;
+  }
+  &__scroll-top {
+  }
+  &__button {
+    padding: 5px;
+    color: $white;
+    cursor: pointer;
+    background: none;
+    font-size: 18px;
+    margin-right: 10px;
+    border: 2px solid $border_gray;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    transition: 0.3s ease;
+    text-align: center;
+    line-height: 50%;
+    width: 35px;
+    height: 35px;
+    &:hover {
+      background-color: $primary_color;
+    }
+  }
+}

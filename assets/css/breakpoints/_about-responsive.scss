@@ -1,0 +1,76 @@
+@import "media-queries";
+/*laptop screen about */
+@include laptop {
+  .about {
+    .main {
+      width: 960px;
+    }
+    &__single {
+      width: 305px;
+    }
+  }
+}
+
+/*tablet screen about */
+@include tablet {
+  .about {
+    .main {
+      width: 750px;
+    }
+    &__single {
+      width: 235px;
+    }
+  }
+}
+
+/*mobile screen about */
+@include mobile {
+  .about {
+    .main {
+      width: 310px;
+    }
+    &__area {
+      padding: 40px 0px;
+    }
+    .title-area {
+      padding-bottom: 30px;
+      &__title {
+        font-size: 30px;
+        word-spacing: 1px;
+        padding-bottom: 30px;
+      }
+      &__desc {
+        color: #333;
+        width: 99%;
+        word-spacing: 0.5px;
+      }
+      &__title::before {
+        top: 40px;
+      }
+    }
+    &__single {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 30px 20px;
+      margin-right: 0px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    &__single-title {
+      font-size: 25px;
+      word-spacing: 0.5px;
+      letter-spacing: 0.5px;
+    }
+    &__single-desc {
+      padding: 15px 0px 25px 0px;
+    }
+    .btn {
+      padding: 8px 20px;
+      font-size: 16px;
+    }
+    .btn.btn-outline {
+      padding: 6px 20px;
+    }
+  }
+}
